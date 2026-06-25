@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Page</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>Devices</h2>
+
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="myrequests.html">My Requests</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for devices...">
+            <button>Search</button>
+        </div>
+
+        <section class="devices-section">
+            <h2>Available Devices</h2>
+
+            <div class="devices-grid">
+
+                <div class="device-card">
+                    <img src="images/wheelchair.jpg">
+                    <div class="device-info">
+                        <h3>Wheelchair</h3>
+                        <p>Used - Free</p>
+                        <a href="patient-request.html">
+                            <button>Request Device</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="device-card">
+                    <img src="images/hearing.jpg">
+                    <div class="device-info">
+                        <h3>Hearing Aid</h3>
+                        <p>New - $50</p>
+                        <a href="patient-request.html">
+                            <button>Request Device</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="device-card">
+                    <img src="images/walker.jpg">
+                    <div class="device-info">
+                        <h3>Walker</h3>
+                        <p>Used - Free</p>
+                        <a href="patient-request.html">
+                            <button>Request Device</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

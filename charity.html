@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Portal</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2>Ability Hub</h2>
+
+            <ul>
+                <li><a href="charity-profile.html">Charity Profile</a></li>
+                <li><a href="charity.html">Request Devices</a></li>
+                <li><a href="charity-requests.html">Track Requests</a></li>
+                <li><a href="upload-device.html">Upload Device</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="search-box">
+                <input type="text" placeholder="Search for device...">
+                <button>Search</button>
+            </div>
+
+            <section class="devices-section">
+                <h2>Available Devices</h2>
+
+                <div class="devices-grid">
+
+                    <div class="device-card">
+                        <img src="images/wheelchair.jpg">
+                        <div class="device-info">
+                            <h3>Wheelchair</h3>
+                            <p>Available</p>
+                            <a href="charity-request.html">
+                                <button>Submit Request</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <img src="images/walker.jpg">
+                        <div class="device-info">
+                            <h3>Walker</h3>
+                            <p>Available</p>
+                            <a href="charity-request.html">
+                                <button>Submit Request</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="device-card">
+                        <img src="images/hearing.jpg">
+                        <div class="device-info">
+                            <h3>Walker</h3>
+                            <p>Available</p>
+                            <a href="charity-request.html">
+                                <button>Submit Request</button>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

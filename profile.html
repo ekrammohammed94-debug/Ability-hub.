@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2>My Profile</h2>
+            <ul>
+                <li><a href="patient.html">Devices</a></li>
+                <li><a href="myrequests.html">My Requests</a></li>
+            </ul>
+
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </aside>
+
+        <main class="main-content">
+            <h1 id="userName">Welcome, User</h1>
+
+            <script>
+
+                const user = JSON.parse(localStorage.getItem("user"));
+
+                if (user) {
+
+                    document.getElementById("userName").innerText =
+                        "Welcome " + user.name;
+
+                    document.getElementById("userEmail").innerText =
+                        user.email;
+
+                }
+
+            </script>
+
+
+            <div class="table-section">
+                <h2>Previously Requested Devices</h2>
+
+                <table>
+                    <tr>
+                        <th>Device</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Wheelchair</td>
+                        <td>Approved</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

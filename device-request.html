@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Request Form</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>AidLink</h2>
+
+        <ul>
+            <li><a href="hospital-profile.html">Hospital Profile</a></li>
+            <li><a href="hospital.html">Request Device</a></li>
+            <li><a href="hospital-requests.html">Track Requests</a></li>
+            <li><a href="refer-patient.html">Refer Patient</a></li>
+        </ul>
+
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+        <section class="form-section">
+            <h2>Device Request Form</h2>
+
+            <form>
+                <input type="text" placeholder="Patient Name" required>
+                <input type="text" placeholder="National ID" required>
+                <input type="text" placeholder="Medical Condition" required>
+
+                <input type="file">
+                <input type="file">
+
+                <select required>
+                    <option value="">Priority Level</option>
+                    <option>Normal</option>
+                    <option>Urgent</option>
+                </select>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

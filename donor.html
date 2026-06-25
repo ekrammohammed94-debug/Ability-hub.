@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Portal</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2>Donor pages</h2>
+
+            <ul>
+                <li><a href="donor-profile.html">Donor Profile</a></li>
+                <li><a href="donor.html">Donate Device</a></li>
+                <li><a href="my-donations.html">My Donations</a></li>
+            </ul>
+
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </aside>
+
+        <main class="main-content">
+
+            <section class="form-section">
+                <h2>Donate Device</h2>
+
+                <form>
+                    <input type="text" placeholder="Device Name">
+
+                    <input type="file">
+
+                    <select>
+                        <option>Condition</option>
+                        <option>New</option>
+                        <option>Used</option>
+                    </select>
+
+                    <select>
+                        <option>Price Type</option>
+                        <option>Free</option>
+                        <option>Paid</option>
+                    </select>
+
+                    <input type="number" placeholder="Price">
+
+                    <input type="text" placeholder="Location">
+
+                    <button>Upload Device</button>
+                </form>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

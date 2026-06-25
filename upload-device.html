@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Device</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>Ability Hub</h2>
+
+        <ul>
+            <li><a href="charity-profile.html">Charity Profile</a></li>
+            <li><a href="charity.html">Request Devices</a></li>
+            <li><a href="charity-requests.html">Track Requests</a></li>
+            <li><a href="upload-device.html">Upload Device</a></li>
+        </ul>
+
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+        <section class="form-section">
+            <h2>Upload Device</h2>
+
+            <form>
+                <input type="text" placeholder="Device Name">
+
+                <input type="file">
+
+                <select>
+                    <option>Condition</option>
+                    <option>New</option>
+                    <option>Used</option>
+                </select>
+
+                <select>
+                    <option>Price Type</option>
+                    <option>Free</option>
+                    <option>Paid</option>
+                </select>
+
+                <input type="number" placeholder="Price">
+
+                <input type="text" placeholder="Charity Location">
+
+                <button>Upload Device</button>
+            </form>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Portal</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Hospital</h2>
+
+        <ul>
+            <li><a href="hospital-profile.html">Hospital Profile</a></li>
+            <li><a href="hospital.html">Request Device</a></li>
+            <li><a href="hospital-requests.html">Track Requests</a></li>
+            <li><a href="refer-patient.html">Refer Patient</a></li>
+        </ul>
+
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for assistive devices...">
+            <button>Search</button>
+        </div>
+
+        <section class="devices-section">
+            <h2>Available Devices</h2>
+
+            <div class="devices-grid">
+
+                <div class="device-card">
+                    <img src="images/wheelchair.jpg" alt="Wheelchair">
+                    <div class="device-info">
+                        <h3>Wheelchair</h3>
+                        <p>Available</p>
+                        <a href="device-request.html">
+                            <button>Submit Request</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="device-card">
+                    <img src="images/walker.jpg" alt="Walker">
+                    <div class="device-info">
+                        <h3>Walker</h3>
+                        <p>Available</p>
+                        <a href="device-request.html">
+                            <button>Submit Request</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="device-card">
+                    <img src="images/hearing.jpg" alt="Hearing Aid">
+                    <div class="device-info">
+                        <h3>Hearing Aid</h3>
+                        <p>Available</p>
+                        <a href="device-request.html">
+                            <button>Submit Request</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

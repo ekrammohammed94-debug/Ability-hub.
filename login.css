@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F8FAFC;
+}
+
+/* LAYOUT */
+.login-container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* LEFT SIDE */
+.left-side{
+    flex:1;
+    background:linear-gradient(135deg,#2F80ED,#56CCF2);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+}
+
+.left-side h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.left-side p{
+    font-size:18px;
+    max-width:400px;
+}
+
+/* RIGHT SIDE */
+.right-side{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+}
+
+/* FORM CARD */
+.login-form{
+    width:400px;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+/* hover on form (subtle lift) */
+.login-form:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.login-form h2{
+    margin-bottom:30px;
+    text-align:center;
+    color:#1E293B;
+}
+
+/* INPUTS */
+.login-form input{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+/* input focus animation */
+.login-form input:focus{
+    border-color:#2F80ED;
+    box-shadow:0 0 0 4px rgba(47,128,237,0.15);
+    transform:scale(1.02);
+}
+
+/* BUTTON */
+.login-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#2F80ED;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* button hover animation */
+.login-form button:hover{
+    background:#2563eb;
+    transform:translateY(-5px) scale(1.03);
+    box-shadow:0 15px 25px rgba(37,99,235,0.3);
+}
+
+/* REGISTER LINK */
+.register-link{
+    margin-top:20px;
+    text-align:center;
+    color:#64748B;
+}
+
+.register-link a{
+    color:#2F80ED;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+/* link hover */
+.register-link a:hover{
+    color:#2563eb;
+    text-decoration:underline;
+}

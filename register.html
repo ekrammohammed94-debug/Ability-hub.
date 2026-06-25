@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AidLink</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="register-container">
+
+        <form class="register-form">
+            <h2>Create Account</h2>
+
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+
+            <select required>
+                <option value="">Select Your Role</option>
+                <option value="patient">Patient</option>
+                <option value="hospital">Hospital</option>
+                <option value="charity">Charity</option>
+                <option value="donor">Donor</option>
+            </select>
+
+            <button type="submit">Register</button>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </form>
+
+    </div>
+<script src="js/auth.js"></script>
+</body>
+</html>
